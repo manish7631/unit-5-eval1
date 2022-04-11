@@ -11,7 +11,8 @@ export const Inventory = () => {
       const Score = xyz.Scores
       const Wicket = xyz.Wickets
       const Balls = xyz.Balls
-    var overs = Math.floor(Balls/6)
+    var overs =  (Balls/6).toFixed(1)
+    console.log(overs)
     
       const Change = (value, title) => {
         if(title === "Score"){
